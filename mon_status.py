@@ -55,7 +55,7 @@ def check_status(hostname, cmdpath=None, logger=None, pyprocs=[], errhandler=do_
     procs_dead = pyprocs.copy()
     for proc in pyprocs:
         for _, item in status['pyprocs'].items():
-            if proc in item['cmdline']:
+            if proc in ' '.join(item['cmdline']):
                 procs_dead.pop(procs_dead.index(proc))
                 break
 
