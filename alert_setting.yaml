@@ -1,0 +1,3 @@
+slack_setting:
+  api_token: 'PUT TOKEN HERE'
+  channel: 'PUT CHANNEL HERE'
